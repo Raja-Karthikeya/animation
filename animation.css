@@ -1,0 +1,48 @@
+div{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: lightgrey;
+}
+.a:hover{
+    animation-name: rotateDiv-a;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+}
+@keyframes rotateDiv-a{
+    100%{
+        transform: translateX(300px) rotate(360deg);
+    }
+}
+.b:hover{
+    animation-name: rotateDiv-b;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: 20;
+    animation-direction: alternate;
+}
+@keyframes rotateDiv-b{
+    100%{
+        transform: translateX(-300px) rotate(-360deg);
+    }
+}
+.c:hover{
+    animation-name: rotateDiv-c;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: 25;
+    animation-direction: alternate ;
+}
+@keyframes rotateDiv-c{
+    100%{
+        transform: translateY(300px) rotate(360deg);
+    }
+}
